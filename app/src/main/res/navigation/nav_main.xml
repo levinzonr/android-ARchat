@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainActivity">
+
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="cz.levinzonr.archat.ui.preferences.PreferencesFragment"
+        android:label="fragment_preferences"
+        tools:layout="@layout/fragment_preferences" >
+        <action
+            android:id="@+id/action_preferencesFragment_to_wallConfigureFragment"
+            app:destination="@id/wallConfigureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallConfigureFragment"
+        android:name="cz.levinzonr.archat.ui.configure.WallConfigureFragment"
+        android:label="fragment_wall_configure"
+        tools:layout="@layout/fragment_wall_configure" />
+</navigation>
